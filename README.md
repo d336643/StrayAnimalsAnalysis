@@ -11,13 +11,14 @@
   - ex. FootCoat :{'1腳受傷', '前腳腳趾前端有白毛','左前肢 橈骨脫臼，尺骨近端斷裂。',...} => {黃95, 無106330, 白319, 其他180, 受傷41, 虎斑78, 棕灰黑45}
   - 但這種分法可能導致某些種類個數太少，其他跟無太多
 - 移除欄位：
-  Name, TypeId, AcceptNum, DistrictTeam, Sex, Reason, ReasonType, ReasonTypeName, ReasonRemark, Variety, Build, Age, AgeName, Age2, Coat, HairType, Collar, CollarRemark, Thoracodorsal, ThoracodorsalRemark, Adoption, NotAdoption, Situation, SituationName, Situation2, ChipNum, DoglicenseNum, Remark, CreateTime, IsDelete, EscapeDate, EscapeRemark, Status, Address, IsSterilization, SterilizationDate, IsTNR, EarNote, DoctorId, OpenAdoptionTime, ShapeRemark, Story, IsIsolation, IsolationDate, IsolationReason, IsolationRemark, IsQuarantine, QuarantineDate, QuarantineReason, QuarantineRemark, VolunteerAlbum, Note, Resettlement, ChildreAnlong, AnimalAnlong, Phone, Email, AndroidCount, MovieUrl, IsChoice, isInto, SyncTime, CreateUser, UpdateUser, UpdateTime, LengthCoat, DoglicenseDate, DoglicensNoUseId, CageTypeName, CageName, TypeRemark, HealthStatus, HealthStatusRemark, BehaviorRemark, CageIdStr, CageTypeIdStr, MedicineName, VaccineDate, whVariety, WhInto, SearchKeyword, Unit, UserTag, VillageID, VillageName, ErrorMessage, Language, PageSize, CurrentPage, SortFields, SortDirection, RowCount
+  Name, TypeId, AcceptNum, DistrictTeam, Sex, Reason, ReasonType, ReasonTypeName, ReasonRemark, Variety, Build, Age, AgeName, Age2, Coat, HairType, Collar, CollarRemark, Thoracodorsal, ThoracodorsalRemark, Adoption, NotAdoption, Situation, SituationName, Situation2, ChipNum, DoglicenseNum, Remark, CreateTime, IsDelete, EscapeDate, EscapeRemark, Status, Address, IsSterilization, SterilizationDate, IsTNR, EarNote, DoctorId, OpenAdoptionTime, ShapeRemark, Story, IsIsolation, IsolationDate, IsolationReason, IsolationRemark, IsQuarantine, QuarantineDate, QuarantineReason, QuarantineRemark, VolunteerAlbum, Note, Resettlement, ChildreAnlong, AnimalAnlong, Phone, Email, AndroidCount, MovieUrl, IsChoice, isInto, SyncTime, CreateUser, UpdateUser, UpdateTime, LengthCoat, DoglicenseDate, DoglicensNoUseId, CageTypeName, CageName, TypeRemark, HealthStatus, HealthStatusRemark, BehaviorRemark, CageIdStr, CageTypeIdStr, MedicineName, VaccineDate, whVariety, WhInto, SearchKeyword, Unit, UserTag, VillageID, VillageName, ErrorMessage, Language, PageSize, CurrentPage, SortFields, SortDirection, RowCountSituationRemark
   
-- NotAdoptionName有標注的欄位都刪掉{'健康不適', '年紀不適', '行為不適', '動保案件'}，因為有標註表示他不能被領養
-- SituationRemark有標注的欄位都刪掉{'鐘文虎領回', '5/19死亡送回', '5/4自然死亡', '不吃，流濃稠口水，流鼻涕', '8/15由拾獲人帶出', '9/29中途認養'} //但有蠻多中途認養的...
+- NotAdoptionName 欄位留著，{'健康不適', '年紀不適', '行為不適', '動保案件'}
+
 
 ##### clean2.csv
 - 把 Coat系列欄位統整特徵欄位【黃、棕、灰、黑、白、橘、虎斑、受傷（生病）、麒麟尾、剪耳、四眼、截尾】
   - 這其實是人工篩選出來的特徵...
 - 把重量改成 continuous instead of category
+- 新增認養欄位
 
